@@ -49,7 +49,7 @@ function setLanguage(language) {
   });
   menuButton.setAttribute('aria-label', translations[language]?.[header.classList.contains('menu-open') ? 'menuClose' : 'menuOpen'] ?? (header.classList.contains('menu-open') ? 'Close navigation' : 'Open navigation'));
   const description = document.querySelector('meta[name="description"]');
-  const pageTitles = { en: 'Goodground — Feed the good in every growing thing', th: 'Goodground — บำรุงสิ่งดี ๆ ให้เติบโต', lo: 'Goodground — ບຳລຸງສິ່ງດີໆໃຫ້ເຕີບໂຕ' };
+  const pageTitles = { en: 'POWDER PLANT — PSK2005', th: 'POWDER PLANT — PSK2005', lo: 'POWDER PLANT — PSK2005' };
   const descriptions = { en: 'Meet Goodground: two thoughtful fertilizers for stronger roots, healthier soil, and thriving gardens.', th: 'พบกับ Goodground ปุ๋ย 2 สูตรที่ใส่ใจ เพื่อรากที่แข็งแรง ดินที่สมบูรณ์ และสวนที่งอกงาม', lo: 'ພົບກັບ Goodground: ປຸ໋ຍ 2 ສູດທີ່ໃສ່ໃຈ ເພື່ອຮາກທີ່ແຂງແຮງ ດິນທີ່ອຸດົມສົມບູນ ແລະ ສວນທີ່ງອກງາມ' };
   document.title = pageTitles[language] ?? pageTitles.en;
   description.content = descriptions[language] ?? descriptions.en;
